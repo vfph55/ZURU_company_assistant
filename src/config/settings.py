@@ -20,7 +20,7 @@ class Settings:
         log_queries: Whether to log user queries
     """
     # OpenRouter Configuration
-    openrouter_api_key: Optional[str] = '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'
+    openrouter_api_key: Optional[str] = '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'
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
 
     # SerPAPI Configuration

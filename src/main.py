@@ -34,7 +34,7 @@ settings = Settings()
 def display_welcome() -> None:
     """Display welcome message and instructions."""
     welcome_text = """
-        # ZURU Melon Company Assistant
+        # ZURU Company Assistant
         Welcome to the official company assistant!
 
         You can ask:
@@ -73,10 +73,10 @@ def handle_user_query(query: str) -> str:
         external_search = ExternalSearch(settings)
         real_time_context = external_search.real_time_search(query)
         
-        # Use RAG to generate a response based on KB context as primary source and real-time search as additional information source if KB context cannot answer the question. 
+        # response based on KB context as primary source and real-time search as additional one (if KB cannot answer). 
         relevant_context = external_search.generate_rag_response(query, relevant_context, real_time_context)
         
-        # If the KB and real-time search cannot answer the question, perform a general knowledge search as a fallback
+        # fallback to intrinsic knowledge search if both KB and real-time search cannot answer the question
         failed_singal = "Sorry, I don't have enough information to answer this question."
         if relevant_context.strip() == failed_singal:
             relevant_context = external_search.search(query)
@@ -103,7 +103,7 @@ def run_cli() -> NoReturn:
 
         # Handle exit command
         if user_input.lower() in ["exit", "quit", "q"]:
-            console.print("\nThank you for using ZURU Melon Company Assistant!")
+            console.print("\nThank you for using ZURU Company Assistant!")
             sys.exit(0)
 
         # Handle help command
