@@ -73,7 +73,7 @@ class ResponseGenerator:
             return f"No information found for general knowledge query: '{query}'. Please try rephrasing your question."
 
         # Add introductory text for general responses
-        intro = f"Here's the answer to your question: \n\n"
+        intro = f"Here's the answer to your question:'{query}' \n\n"
         footer = "\n\nThis information is from external sources and not official ZURU Melon content."
 
         return f"{intro}{context}{footer}"
