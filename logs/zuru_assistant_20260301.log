@@ -1,0 +1,63 @@
+2026-03-01 03:30:03 - agent.external_search - ERROR - external_search:95 - External search failed: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-01 03:31:38 - __main__ - ERROR - main:123 - Unhandled error in CLI loop
+Traceback (most recent call last):
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/main.py", line 115, in run_cli
+    response = handle_user_query(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/main.py", line 73, in handle_user_query
+    relevant_context = kb_retriever.retrieve(query)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/agent/kb_retriever.py", line 101, in retrieve
+    if not self.kb_embeddings or not self.kb_texts:
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2026-03-01 03:33:24 - agent.external_search - ERROR - external_search:95 - External search failed: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions
+2026-03-01 03:35:21 - agent.external_search - ERROR - external_search:95 - External search failed: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions
+2026-03-01 03:39:56 - agent.external_search - ERROR - external_search:95 - External search failed: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions
+2026-03-01 03:43:35 - agent.external_search - INFO - external_search:87 - OpenRouter API Usage - Tokens: 162, Query: hows the weather...
+2026-03-01 03:52:42 - __main__ - ERROR - main:123 - Unhandled error in CLI loop
+Traceback (most recent call last):
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/main.py", line 114, in run_cli
+TypeError: 'NoneType' object does not support the context manager protocol
+2026-03-01 03:53:13 - __main__ - ERROR - main:121 - Unhandled error in CLI loop
+Traceback (most recent call last):
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/main.py", line 112, in run_cli
+    with console.print("[bold green]Processing your query...[/bold green]"):
+TypeError: 'NoneType' object does not support the context manager protocol
+2026-03-01 03:54:40 - agent.external_search - INFO - external_search:87 - OpenRouter API Usage - Tokens: 301, Query: how the weather...
+2026-03-01 03:55:59 - agent.external_search - ERROR - external_search:95 - External search failed: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-01 03:57:04 - agent.external_search - INFO - external_search:87 - OpenRouter API Usage - Tokens: 334, Query: how to cook rice...
+2026-03-01 18:00:02 - __main__ - ERROR - main:121 - Unhandled error in CLI loop
+Traceback (most recent call last):
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/main.py", line 113, in run_cli
+    response = handle_user_query(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/main.py", line 71, in handle_user_query
+    relevant_context = kb_retriever.retrieve(query)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/agent/kb_retriever.py", line 101, in retrieve
+    if not self.kb_embeddings or not self.kb_texts:
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2026-03-01 18:11:42 - __main__ - ERROR - main:121 - Unhandled error in CLI loop
+Traceback (most recent call last):
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/main.py", line 113, in run_cli
+    response = handle_user_query(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/main.py", line 71, in handle_user_query
+    relevant_context = kb_retriever.retrieve(query)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chengxiaoqian/ZURU_company_assistant/src/agent/kb_retriever.py", line 101, in retrieve
+    if not self.kb_embeddings or not self.kb_texts:
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2026-03-01 20:29:36 - agent.external_search - INFO - external_search:146 - RAG API Usage - Tokens: 259, Query: whats the coding style...
+2026-03-01 20:32:23 - agent.external_search - INFO - external_search:146 - RAG API Usage - Tokens: 446, Query: whats the coding style...
+2026-03-01 20:34:29 - agent.external_search - INFO - external_search:87 - OpenRouter API Usage - Tokens: 373, Query: whats news td abt CHINA...
+2026-03-01 20:47:30 - agent.external_search - INFO - external_search:146 - RAG API Usage - Tokens: 439, Query: whats coding style...
+2026-03-01 20:49:35 - agent.external_search - ERROR - external_search:152 - RAG generation failed: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-01 20:53:40 - agent.external_search - ERROR - external_search:152 - RAG generation failed: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-01 20:55:54 - agent.external_search - ERROR - external_search:152 - RAG generation failed: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-01 20:57:35 - agent.external_search - INFO - external_search:146 - RAG API Usage - Tokens: 439, Query: whats the coding style...
+2026-03-01 21:10:02 - agent.external_search - ERROR - external_search:152 - RAG generation failed: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-01 21:22:57 - agent.external_search - ERROR - external_search:152 - RAG generation failed: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-03-01 21:23:55 - agent.external_search - INFO - external_search:146 - RAG API Usage - Tokens: 441, Query: whats the coding style...
+2026-03-02 00:25:27 - agent.external_search - INFO - external_search:87 - OpenRouter API Usage - Tokens: 146, Query: hows the weather td...
+2026-03-02 00:25:57 - agent.external_search - ERROR - external_search:95 - External search failed: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
