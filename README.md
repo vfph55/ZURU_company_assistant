@@ -44,17 +44,25 @@ git clone https://github.com/vfph55/ZURU_company_assistant.git
 cd ZURU_company_assistant
 
 ### Step 2: Create Virtual Environment
+'''bash
 conda create -n zuru python=3.11
 conda activate zuru
+'''
 
 ### Step 3: Install Dependencies
+'''bash
 pip install -r requirements.txt
+'''
+
 
 ### Step 4: Configure Environment Variables
 Fill your own OpenRouter API in .env file
 
 ### Step 5: Run the Assistant
+'''bash
+cd src
 python src/main.py
+'''
 
 ## Code Structure
 ZURU_company_assistant/
